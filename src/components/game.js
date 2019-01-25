@@ -18,8 +18,10 @@ export default class Game extends React.Component {
     };
 
     submitGuess(guess){
-        this.setState({currentGuess: guess})
-        
+        this.setState({
+            currentGuess: guess,
+            guessList: [...this.state.guessList, guess]
+        })
     }
 
     render(){

@@ -7,10 +7,10 @@ export default function GuessForm(props) {
         <form
             onSubmit={
                 (e) => {
+                    const input = e.target.children.item(0);
                     e.preventDefault();
                     // props.getGuess(e.target.value)
-                    console.log(props.children)
-                    console.log(e.target.children)
+                    props.getGuess(Number(input.value))
                 }
             }>
             <input type="text" name="userGuess" id="userGuess"
