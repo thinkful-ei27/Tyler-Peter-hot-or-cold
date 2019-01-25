@@ -12,7 +12,14 @@ export default function TopNav(props) {
                     </a>
                 </li>
                 <li>
-                    <a className="new" href="#">
+                    <a className="new" href="#" 
+                    onClick={(e)=>{
+                        
+                         e.preventDefault();
+                        console.log(props.onNewGame)
+                        props.onNewGame(e)
+
+                    }}>
                         + New Game
                     </a>
                 </li>
