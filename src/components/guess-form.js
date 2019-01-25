@@ -10,7 +10,7 @@ export default function GuessForm(props) {
                     e.preventDefault();
                     // props.getGuess(e.target.value)
                     console.log(props.children)
-                    console.log(e.target.children.forEach(child => console.log(child)))
+                    console.log(e.target.children)
                 }
             }>
             <input type="text" name="userGuess" id="userGuess"
@@ -20,4 +20,5 @@ export default function GuessForm(props) {
         </form>
     );
 };
+// 
 
