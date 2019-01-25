@@ -7,7 +7,9 @@ export default function TopNav(props) {
         <nav>
             <ul className="clearfix">
                 <li>
-                    <a className="what" href="#">
+                    <a 
+                    onClick={props.onToggle}
+                    className="what" href="#">
                         What?
                     </a>
                 </li>
