@@ -59,6 +59,9 @@ export default class Game extends React.Component {
         if(isNaN(guess)){
             return
         }
+        else if(this.state.guessList.includes(guess)){
+            return
+        }
         else if(guess > 100 || guess <= 0){
             return
         }
